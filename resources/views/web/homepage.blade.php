@@ -51,7 +51,7 @@
           </p>
         </div>
         <div class="col-lg-4 my-auto">
-     		   <a href=""><button class="btn btn-outline-primary btn-lg ">Customize Your Trip Now!</button></a>
+     		   <a href="/customize"><button class="btn btn-outline-primary btn-lg ">Customize Your Trip Now!</button></a>
         </div>
       </div>
      </div>
