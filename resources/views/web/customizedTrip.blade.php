@@ -198,7 +198,7 @@
 		<br>
 		<div class="row">
 			<div class="col-md-3"></div>
-			<div class="col-md-6 px-md-0 px-sm-5" align="center"><button class="btn btn-primary" style="width: 40%; height: 130%">PlAN IT FOR ME!</button></div>
+			<div class="col-md-6 px-md-0 px-sm-5" align="center"><button class="btn btn-primary" style="width: 40%; height: 130%">NEXT</button></div>
 			<div class="col-md-3"></div>
 		</div>
 

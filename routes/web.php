@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::get('/customize', function () {
     return view('web.customizedTrip');
 });
+Route::get('/customize2', function () {
+    return view('web.customizedTrip2');
+});
 
 Auth::routes();
 
