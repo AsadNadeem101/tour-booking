@@ -7,7 +7,7 @@
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="z-index:0;">
     <div class="carousel-item active">
       <img src="Hunza.jpg" class=" w-100" alt="...">
       <div class="carousel-caption text-center d-sm-block">
@@ -30,11 +30,11 @@
       </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev" style="left:0;">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style="rigth:0;">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -65,10 +65,10 @@
     </div>
     <div class="trip">   
      <div class="text-center" id="outer">
-         <h1 class=" container title">Yaadgar Packages</h1>
+         <h1 class=" container title pb-0 mb-0">Yaadgar Packages</h1>
       <div class="row">
         <div class="col-lg-12">
-              <div class="container my-3 myh1">
+              <div class="container my-1 myh1">
                 <div class="row">
                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                         <div class="carousel-inner w-100" role="listbox">
@@ -85,7 +85,7 @@
                                               <li>Fourth item</li>
                                            </ul> 
                                           </div>
-                                          <div class="col-auto">
+                                          <div class="col-auto pr-0">
                                             <h4 style="padding-top: 4%;">28,000 PKR</h4>                                          
                                           </div>
                                         </div>
@@ -105,7 +105,7 @@
                                                   <li>Fourth item</li>
                                                </ul> 
                                               </div>
-                                              <div class="col-auto">
+                                              <div class="col-auto pr-0">
                                                 <h4 style="padding-top: 4%">28,000 PKR</h4>                                          
                                               </div>
                                           </div>
@@ -125,7 +125,7 @@
                                                   <li>Fourth item</li>
                                                </ul> 
                                               </div>
-                                              <div class="col-auto">
+                                              <div class="col-auto pr-0">
                                                 <h4 style="padding-top: 4%">28,000 PKR</h4>                                          
                                               </div>
                                           </div>
@@ -145,7 +145,7 @@
                                                 <li>Fourth item</li>
                                              </ul> 
                                             </div>                                            
-                                            <div class="col-auto">
+                                            <div class="col-auto pr-0">
                                               <h4 style="padding-top: 4%;">28,000 PKR</h4>                                          
                                             </div>
                                           </div>
@@ -165,7 +165,7 @@
                                                 <li>Fourth item</li>
                                              </ul> 
                                             </div>
-                                            <div class="col-auto">
+                                            <div class="col-auto pr-0">
                                               <h4 style="padding-top: 4%">28,000 PKR</h4>                                          
                                             </div>
                                        </div>
@@ -185,7 +185,7 @@
                                                 <li>Fourth item</li>
                                              </ul> 
                                             </div>
-                                            <div class="col-auto">
+                                            <div class="col-auto pr-0">
                                               <h4 style="padding-top: 4%">28,000 PKR</h4>                                          
                                             </div>
                                        </div>
@@ -315,8 +315,10 @@
             font-weight: bold;
             color: #e6223d;
             padding-bottom: 28px;
+            font-family: 'Great Vibes', cursive;
+            font-size: 84px;
+            letter-spacing: 6px
 
-            text-transform: uppercase;
           }
         /*.title::after {
         content: '';
@@ -339,7 +341,9 @@
           font-weight: bold;
           color: #e6223d;
           padding-bottom: 10px;
-          text-transform: uppercase;
+          font-size: 84px;
+          letter-spacing: 6px;
+          font-family: 'Great Vibes', cursive;
         }
 
         .testimonials h1::after {
@@ -405,6 +409,9 @@
           box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
           cursor: pointer;
           transition: 0.5s;
+        }
+        .nav-link{
+          font-weight: bold;
         }
         @media (max-width: 768px) {
           .carousel-inner .carousel-item > div {
