@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('web.homepage');
 });
+Route::get('/customize', function () {
+    return view('web.customizedTrip');
+});
 
 Auth::routes();
 
