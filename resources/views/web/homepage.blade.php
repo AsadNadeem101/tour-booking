@@ -1,14 +1,14 @@
 @extends('layouts.website_layout')
 
 @section('content')
-<div class="container-fluid" style="padding: 0; margin: 0; overflow-x: hidden;">
+<div class="container-fluid" style="padding: 0; margin: 0;">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" style="z-index:0;">
+      <div class="carousel-inner upper-slider">
         <div class="carousel-item active">
           <img src="Hunza.jpg" class=" w-100" alt="...">
           <div class="carousel-caption text-center d-sm-block">
@@ -16,14 +16,14 @@
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
-        <div class="carousel-item h-50">
+        <div class="carousel-item ">
           <img src="Fairy.jpg" class=" w-100" alt="...">
           <div class="carousel-caption text-center d-sm-block">
             <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <div class="carousel-item h-50">
+        <div class="carousel-item ">
           <img src="Skardu.jpg" class=" w-100" alt="...">
           <div class="carousel-caption justify-content-center d-sm-block">
             <h5 >Third slide label</h5>
@@ -35,7 +35,7 @@
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style="rigth:0;">
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style="right:0;">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
@@ -43,40 +43,19 @@
      
     <br>
     <br>
-    <br>  
-        <div class="trip hero-image">   
-         <div class="text-center" id="outer">
-          <div class="row" style="background-color: black; height: auto; opacity: 0.8">
-            <div class="col-lg-7">
-              <h1 class="title container">About Yaadgar Trip</h1>
-              <p class="px-5 text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-            </div>
-            <div class="col-lg-5">
-              <h1 class="title container">How to book tour?</h1>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/1HcWhJy7mBU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p><br></p>
-            </div> 
-                    <br><br>         
-          </div>
-         </div>
-        </div>
         <div class="trip">   
          <div class="text-center" id="outer">
              <h1 class=" container title pb-0 mb-0">Yaadgar Packages</h1>
           <div class="row">
             <div class="col-lg-12">
                   <div class="container my-1 myh1">
-                    <div class="row">
+                    <div class="row second-slider">
                         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                             <div class="carousel-inner w-100" role="listbox">
                                 <div class="carousel-item active">
                                     <div class="col-md-4 col-auto">
                                         <div class="card card-body">
-                                                <img class="img-fluid" src="p1.JPG" width="100%" height="100%">
+                                            <img class="img-fluid" src="p1.JPG" width="100%" height="100%">
                                             <div class="row">
                                               <div class="col-auto">
                                                 <ul style="text-align: left;">
@@ -96,7 +75,7 @@
                                 <div class="carousel-item">
                                     <div class="col-md-4">
                                         <div class="card card-body">
-                                            <img class="img-fluid" src="p2.JPG" width="100%" height="100%">
+                                            <img class="img-fluid" src="p1.JPG" width="100%" height="100%">
                                               <div class="row">
                                                   <div class="col-auto">
                                                     <ul style="text-align: left">
@@ -194,11 +173,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev" style="left: 0">
                                 <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next" style="right: 0">
                                 <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -244,6 +223,20 @@
 
 @section('css')
 <style>
+          .row {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              margin-right: 0px;
+              margin-left: 0px;
+          }
+          .upper-slider img {
+          vertical-align: middle;
+          border-style: none;
+          height: 60vh;
+            }
           h1, h2, h3, h4, h5, h6 {
           font-family: 'Raleway', sans-serif;
 
@@ -275,7 +268,7 @@
           list-style: none;
           }
           .card-body ul li {
-          background: url(Bullet.gif) no-repeat top left;
+          background: url(bullet1.png) no-repeat top left;
           background-position: 0 6.46px;
           line-height: 1.5625;
           padding: 0 0 4px 32px;
@@ -330,9 +323,7 @@
         widows: 170px;
         margin: 20px auto 5px;
         }*/
-        .carousel-caption{
-          justify-content: center;
-        }
+      
         /* testimonial styling */
         .testimonials {
           margin: 50px auto;
@@ -416,36 +407,36 @@
           font-weight: bold;
         }
         @media (max-width: 768px) {
-          .carousel-inner .carousel-item > div {
+          .second-slider .carousel-inner .carousel-item > div {
             display: none;
           }
-          .carousel-inner .carousel-item > div:first-child {
+          .second-slider .carousel-inner .carousel-item > div:first-child {
             display: block;
           }
         }
 
-        .carousel-inner .carousel-item.active,
-        .carousel-inner .carousel-item-next,
-        .carousel-inner .carousel-item-prev {
+        .second-slider .carousel-inner .carousel-item.active,
+        .second-slider .carousel-inner .carousel-item-next,
+        .second-slider .carousel-inner .carousel-item-prev {
           display: flex;
         }
 
         /* display 3 */
         @media (min-width: 768px) {
           
-          .carousel-inner .carousel-item-right.active,
-          .carousel-inner .carousel-item-next {
+          .second-slider .carousel-inner .carousel-item-right.active,
+          .second-slider .carousel-inner .carousel-item-next {
             transform: translateX(33.333%);
           }
           
-          .carousel-inner .carousel-item-left.active, 
-          .carousel-inner .carousel-item-prev {
+          .second-slider .carousel-inner .carousel-item-left.active, 
+          .second-slider .carousel-inner .carousel-item-prev {
             transform: translateX(-33.333%);
           }
         }
 
-        .carousel-inner .carousel-item-right,
-        .carousel-inner .carousel-item-left{ 
+        .second-slider .carousel-inner .carousel-item-right,
+        .second-slider .carousel-inner .carousel-item-left{ 
           transform: translateX(0);
         }
 
@@ -460,7 +451,7 @@
   interval: 10000
 })
 
-$('.carousel .carousel-item').each(function(){
+$('.second-slider .carousel .carousel-item').each(function(){
     var minPerSlide = 3;
     var next = $(this).next();
     if (!next.length) {
