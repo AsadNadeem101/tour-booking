@@ -22,6 +22,13 @@ Route::get('/customize', function () {
 Route::get('/customize2', function () {
     return view('web.customizedTrip2');
 });
+Route::get('/aboutus', function () {
+    return view('web.aboutus');
+});
+Route::get('/contactus', function () {
+    return view('web.contactus');
+});
+
 
 Auth::routes();
 

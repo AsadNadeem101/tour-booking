@@ -209,7 +209,7 @@
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="profile">
-                            <img src="A.jpg" class="user w-auto h-auto">
+                            <img src="Aa.jpg" class="user w-auto h-auto">
                             <blockquote id="myquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur mollitia quos possimus illum doloribus.</blockquote>
                             <h3>Asad Rajput</h3>
                         </div>
